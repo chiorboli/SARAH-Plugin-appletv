@@ -1,0 +1,36 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleappletv" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleappletv" scope="public">
+    <example>Sarah réveille l'apple T V</example>
+    <tag>out.action=new Object(); </tag>
+    <item weight="2">Sarah</item>
+    <one-of>
+      <item>réveille lapeulle T V<tag>out.action.cmd="Wake"</tag></item>
+      <item>met lapeulle T V en veille<tag>out.action.cmd="Sleep"</tag></item>
+
+      <item>va a gauche<tag>out.action.key="Left"</tag></item>
+      <item>va deux fois a gauche<tag>out.action.key="Left";out.action.repeat=2</tag></item>
+      <item>va trois fois a gauche<tag>out.action.key="Left";out.action.repeat=3</tag></item>
+      <item>va quattre fois a gauche<tag>out.action.key="Left";out.action.repeat=4</tag></item>
+      <item>va a droite<tag>out.action.key="Right"</tag></item>
+      <item>va deux fois a droite<tag>out.action.key="Right";out.action.repeat=2</tag></item>
+      <item>va trois fois a droite<tag>out.action.key="Right";out.action.repeat=3</tag></item>
+      <item>va quattre fois a droite<tag>out.action.key="Right";out.action.repeat=4</tag></item>
+      <item>va en haut<tag>out.action.key="Up"</tag></item>
+      <item>va deux fois en haut<tag>out.action.key="Up";out.action.repeat=2</tag></item>
+      <item>va trois fois en haut<tag>out.action.key="Up";out.action.repeat=3</tag></item>
+      <item>va en bas<tag>out.action.key="Down"</tag></item>
+      <item>va deux fois en bas<tag>out.action.key="Down";out.action.repeat=2</tag></item>
+      <item>va trois fois en bas<tag>out.action.key="Down";out.action.repeat=3</tag></item>
+      <item>sélection ok<tag>out.action.key="Select"</tag></item>
+      <item>annuler<tag>out.action.key="Menu"</tag></item>
+      <item>affiche l'écran d'accueil<tag>out.action.key="H_Menu"</tag></item>
+      <item>lance x b m c<tag>out.action.plugin="XBMC"</tag></item>
+      <item>affiche mes photos<tag>out.action.plugin="Photo"</tag></item>
+      <item>lance youtube<tag>out.action.plugin="YouTube"</tag></item>
+      <item>affiche les réglages<tag>out.action.plugin="Settings"</tag></item>
+
+    </one-of>
+	
+<tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/appletv";</tag>
+  </rule>
+</grammar>

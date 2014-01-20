@@ -1,0 +1,9 @@
+{
+  "modules": { 
+    "appletv": {
+      "description": "Pilote l'AppleTV 2 via le plugin AirControl de FireCore (jailbreak nécessaire)",
+      "version": "1.0",
+      "ip_appletv" : "apple-tv.local"
+    }
+  }
+}
